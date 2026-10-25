@@ -60,11 +60,21 @@ The strongest identified result in the recorded experiments was obtained using C
 
 This result suggests that the choice of color representation may influence crop-image classification performance. Further controlled experiments are required to isolate the effect of color space and validate the approach on independent field data.
 
-## Limitations and Future Work
+## Complete accuracy comparison
 
-The current results reflect classification performance on the available labelled image dataset. They do not yet establish reliable detection of nutrient stress before visible symptoms appear under real agricultural conditions.
-
-Future work can include class-wise error analysis, controlled ablation studies, independent field-image evaluation, testing under different lighting conditions, and deployment-oriented optimization.
+Color space	Model	Best validation accuracy	Test accuracy	Macro F1
+RGB	MobileNetV2	83.95%	79.26%	79.00%
+RGB	EfficientNetB0	83.70%	80.25%	80.04%
+RGB	DenseNet121	78.77%	80.49%	80.53%
+HSV	MobileNetV2	78.52%	78.27%	78.26%
+HSV	EfficientNetB0	80.49%	84.44%	84.36%
+HSV	DenseNet121	71.36%	75.56%	75.57%
+CIELUV	MobileNetV2	83.21%	80.74%	80.73%
+CIELUV	EfficientNetB0	88.40%	86.91%	86.80%
+CIELUV	DenseNet121	82.47%	78.27%	78.48%
+Nutrispace	MobileNetV2	81.98%	82.47%	82.54%
+Nutrispace	EfficientNetB0	74.32%	75.80%	75.55%
+Nutrispace	DenseNet121	84.44%	83.95%	83.93%
 
 ## Technologies
 
