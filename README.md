@@ -62,7 +62,7 @@ This result suggests that the choice of color representation may influence crop-
 
 ## Complete accuracy comparison
 
-# Color space	   Model	     Best validation accuracy	  Test accuracy	  Macro F1
+### Color space	   Model	     Best validation accuracy	  Test accuracy	  Macro F1
 # RGB   	     MobileNetV2	        83.95%	              79.26%	       79.00%
 # RGB	         EfficientNetB0	      83.70%	              80.25%	       80.04%
 # RGB	         DenseNet121	        78.77%	              80.49%	       80.53%
